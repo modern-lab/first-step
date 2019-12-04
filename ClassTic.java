@@ -1,6 +1,7 @@
 /**
  * Java 1. Lesson 4. Tic-tac-toe in console
  * written Aug 4, 2017
+ * New comment 04.12.2019 23:11
  */
 import java.util.*;
 
