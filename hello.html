@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	var elements = parseInt(44);	
+	
+	function array(elements){
+		var arr = [];
+		for (i=0; i<elements; i++)
+			arr.push(i+1);
+		return arr;
+	}
+	
+	function sumarray(n){
+		var sum = 0;
+		for (i=0; i<n.length; i++)
+			sum+=n[i];
+		return sum;
+	}
+
+	function max(n){
+		var maximum = 0;
+		for (i=0; i<n.length; i++) {
+			if (n[i] > maximum)
+				maximum = n[i];
+		}
+		return maximum;
+	}
+	
+	function min(n){
+		var minimum = 0;
+		for (i=0; i<n.length; i++) {
+			minimum = n[0];
+			if (n[i] < minimum)
+				minimum = n[i];
+		}
+	return minimum;
+	}
+	
+	function odd(n){
+		var arrin = [];
+		var arrout = [];
+		for (i=0; i<n.length; i++) {
+			if (n[i]%2 == 0) {
+				arrout.push(n[i]);
+			}
+		}
+	return arrout;
+	}
+	var massiv = array(elements);
+	alert ("Массив из " + elements + " элементов: " + massiv);
+	alert ("Сумма всех элементов массива: " + sumarray(massiv));
+	alert ("Максимальный элемент массива: " + max(massiv));
+	alert ("Минимальный элемент массива: " + min(massiv));
+	alert ("Четные элементы массива: " + odd(massiv));
+	
+</script>
